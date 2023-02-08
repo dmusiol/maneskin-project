@@ -1,0 +1,11 @@
+h1 {
+    font-size: 96px;
+    font-family: sans-serif;
+    line-height: 144px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 26px;
+}
