@@ -12,7 +12,7 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/maneskin-hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 220px;
 }
@@ -49,7 +49,7 @@ header a {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    color: black;
+    color: #092306;
     background-color: white;
     padding: 14px 30px;
     margin-top: 30px;
