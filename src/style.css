@@ -5,18 +5,29 @@ body {
 
 .container {
     max-width: 1400px;
+    grid-gap: 64px;
     margin: 0 auto;
 }
 
 .grid {
     display: grid;
+    grid-gap: 64px;
+}
+
+.grid-2-col-equal {
+    grid-template-columns: 1fr 1fr ;
+}
+
+.grid-3-col-first-narrow {
     grid-template-columns: 1fr 2fr 1fr;
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("../images/maneskin-hero.png");
@@ -68,13 +79,48 @@ header a {
 
 }
 
+main {
+    background-color: white;
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    color: #272044;
+    font-family: "Roboto Mono", sans-serif;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+main p {
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.7;
+    padding-top: 20px;
+}
+
 footer {
     background-image: linear-gradient(rgba(4, 20, 3, 0.9), rgba(0, 0, 0, 0.9)), url("../images/maneskin-footer.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 0.9);
-    padding: 80px 0;
-  
 }
 
 footer h3 {
@@ -90,7 +136,6 @@ footer p {
     font-size: 16px;
     line-height: 24px;
     opacity: 0.9;
-    margin-right: 20px;
 }
 
 footer ul {
@@ -137,8 +182,15 @@ footer a {
         letter-spacing: 2px;
     }
 
-    footer .grid {
-        grid-template-columns: 1fr;
+    section {
+        padding: 30px
     }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+
+ 
 
 }
