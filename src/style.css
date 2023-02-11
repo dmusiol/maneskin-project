@@ -167,6 +167,13 @@ main p {
 .embed {
     width: 100%;
     aspect-ratio: 16/9;
+    filter: sepia(80%);
+}
+
+.embed:hover {
+    filter: none;
+    transform: scale(1.1);
+    transition: all 350ms ease-in-out;
 }
 
 main h4 {
