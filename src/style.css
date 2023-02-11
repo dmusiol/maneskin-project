@@ -18,6 +18,10 @@ body {
     grid-gap: 64px;
 }
 
+.grid-2-rows {
+    grid-gap: 0;
+}
+
 .grid-3-col {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -61,7 +65,7 @@ header h1 {
 header h2 {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1.5;
     margin: 0;
 }
@@ -96,7 +100,7 @@ main {
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -160,6 +164,11 @@ main p {
     text-decoration: none;
 }
 
+.embed {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
 main h4 {
     font-weight: 700;
     font-size: 22px;
@@ -175,6 +184,10 @@ main h5 {
     font-size: 15px;
     text-transform: uppercase;
     margin: 0;
+}
+
+.third h2 {
+    margin-bottom: 30px;
 }
 
 footer {
@@ -233,12 +246,12 @@ footer a {
     }
 
     header h2 {
-        font-size: 15px;
+        font-size: 16px;
 
     }
 
     header h4 {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     header a {
@@ -251,11 +264,33 @@ footer a {
         padding: 30px
     }
 
+    main h2 {
+        font-size: 24px;
+    }
+
+    main h3 {
+        font-size: 12px;
+    }
+
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
     }
 
- 
+    .grid-3-col {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .grid-2-rows {
+        grid-gap: 10px;
+    }
+
+    section.third {
+        padding-bottom: 50px
+
+    }
+    
+
 
 }
